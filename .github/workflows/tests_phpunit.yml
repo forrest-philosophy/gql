@@ -20,8 +20,9 @@ jobs:
 
     - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
 
-    - name: Install dependencies
-      run: |
-        composer install --working-dir=src/gql
-        composer install --working-dir=src/gql/tools/php-cs-fixer
+    - name: Install dependencies symfony
+      run: composer install --working-dir=src/gql
+    
+    - name: Install dependencies php-cs-fixer
+      run: composer install --working-dir=src/gql/tools/php-cs-fixer
 
