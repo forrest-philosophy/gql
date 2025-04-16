@@ -26,3 +26,9 @@ jobs:
     - name: Install dependencies php-cs-fixer
       run: composer install --working-dir=src/gql/tools/php-cs-fixer
 
+    - name: Run php-cs-fixer
+      run: src/gql/tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src/gql
+
+    - name: Run phpunit
+      run: php src/gql/vendor/bin/phpunit
+

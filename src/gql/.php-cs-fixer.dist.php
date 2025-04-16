@@ -5,6 +5,7 @@ use PhpCsFixer\Finder;
 
 $finder = (new Finder())
     ->in(__DIR__)
+    ->exclude(['vendor', 'var'])
 ;
 
 return (new Config())

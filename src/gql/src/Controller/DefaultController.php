@@ -11,8 +11,6 @@ use Symfony\Component\Routing\Attribute\Route;
 class DefaultController extends AbstractController
 {
     #[Route('/', name: 'default')]
-    public function index(): Response
-    {
-        return new Response('Hello World');
+    public function index(): Response { return new Response('Hello World');
     }
 }
