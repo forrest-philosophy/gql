@@ -28,7 +28,7 @@ jobs:
 
     - name: Run php-cs-fixer
       working-directory: src/gql/
-      run: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src/gql
+      run: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix
 
     - name: Run phpunit
       run: php src/gql/vendor/bin/phpunit
