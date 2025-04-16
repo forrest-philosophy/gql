@@ -31,5 +31,6 @@ jobs:
       run: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix
 
     - name: Run phpunit
-      run: php src/gql/vendor/bin/phpunit
+      working-directory: src/gql/
+      run: php bin/phpunit
 
